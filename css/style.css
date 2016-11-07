@@ -1,0 +1,127 @@
+/*****************
+General
+*****************/
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #e3e3e3;
+}
+div, p, ul, ul li {
+    margin: 0;
+    padding: 0;
+}
+button:focus {
+    outline: none;
+}
+button:hover {
+    cursor: pointer;
+}
+.flex {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+}
+.fullScreen {
+    height: 100%;
+    width: 100%;
+}
+
+/*****************
+Slider
+*****************/
+#slides {
+    height: 100% !important;
+    width: 100%;
+}
+.overlay {
+    background-color: rgba(62, 62, 62, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.overlay .flex-child {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay .flex-child.first-child {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.siteSlogan {
+    border: 3px solid #fff;
+    display: inline-block;
+    width: 30%;
+    padding: 1% 1% 2.5%;
+}
+
+@media screen and (max-width: 780px) {
+    .siteSlogan {
+       width: 50%;
+    }
+}
+
+@media screen and (min-width: 781px) {
+    .siteSlogan {
+        width: 30%;
+    }
+}
+
+.overlay.fullScreen .flex-child:first-child button {
+    background: none;
+    border: 1px solid #fff;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.overlay.fullScreen .flex-child.flex {
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay.fullScreen .first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay.fullScreen .second-child {
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+
+#logo {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#sublogo {
+    color: #fff;
+}
+
+/*****************
+Content
+*****************/
+.content {
+    height: 500px;
+}
