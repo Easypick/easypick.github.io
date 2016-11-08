@@ -17,8 +17,14 @@ $(".overlay").find("button").click(function(){
 
 function pasuser(form) { 
 if (form.id.value=="Emanuele") { 
-if (form.pass.value=="halloberlin") { window.location.href = "mycourses"; } 
+if (form.pass.value=="halloberlin") { window.location.href = "mycourses/index.html"; } 
 else { alert("Wrong Password") } 
 } 
 else { alert("Wrong Username") } 
 }
+
+// Dashboard
+
+$('.siteTitle .fa-arrow-left').click(function(){
+
+});
